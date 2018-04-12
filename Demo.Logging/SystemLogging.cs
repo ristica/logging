@@ -10,16 +10,24 @@ namespace Demo.Logging
 {
 	public class SystemLogging : TechnicalLogging, ISystemLogging
 	{
-		private const string _connectionString = "SystemLogging:ConnectionString";
+        #region Fields
+
+        private const string _connectionString = "SystemLogging:ConnectionString";
 		private const string _loggingLevelKey = "SystemLogging:MinimumLevel";
 		private const string _loggingOverrideLevelKey = "SystemLogging:OverrideMicrosoftSystemLevel";
 
-		public SystemLogging(IConfiguration configuration, ILoggerFactory loggerFactory, ILoggingEnricher loggingEnricher)
+        #endregion
+
+        #region C-Tor
+
+        public SystemLogging(IConfiguration configuration, ILoggerFactory loggerFactory, ILoggingEnricher loggingEnricher)
 			: base(configuration, loggerFactory, loggingEnricher)
 		{
 		}
 
-		protected override string GetDatabaseConnectionString()
+        #endregion
+
+        protected override string GetDatabaseConnectionString()
 		{
 			return Configuration[_connectionString];
 		}

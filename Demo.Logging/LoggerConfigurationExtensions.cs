@@ -20,6 +20,8 @@ namespace Demo.Logging
 
         #endregion
 
+        #region C-Tor
+
         public static LoggerConfiguration ILSLoggerSink(this LoggerSinkConfiguration loggerConfiguration,
 			Func<string> connectionstringFunc,
 			LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum,
@@ -65,5 +67,7 @@ namespace Demo.Logging
 					columnOptions,
 					schemaName), restrictedToMinimumLevel);
 		}
-	}
+
+        #endregion
+    }
 }

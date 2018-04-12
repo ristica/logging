@@ -42,9 +42,9 @@ namespace Demo.Logging
 
         public void CloseAndFlush()
 		{
-			_technicalLogging.CloseAndFlush();
-			_performanceLogging.CloseAndFlush();
-			_systemLogging.CloseAndFlush();
+            this._technicalLogging.CloseAndFlush();
+            this._performanceLogging.CloseAndFlush();
+            this._systemLogging.CloseAndFlush();
 		}
 
 		public void LogSystemInformation(string message) => _systemLogger.Information(message);
