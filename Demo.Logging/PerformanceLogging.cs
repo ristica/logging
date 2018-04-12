@@ -10,16 +10,24 @@ namespace Demo.Logging
 {
 	public class PerformanceLogging : TechnicalLogging, IPerformanceLogging
 	{
-		private const string _connectionString = "PerformanceLogging:ConnectionString";
+        #region Fields
+
+        private const string _connectionString = "PerformanceLogging:ConnectionString";
 		private const string _performanceLoggingLevelKey = "PerformanceLogging:MinimumLevel";
 		private const string _performanceLoggingOverrideLevelKey = "PerformanceLogging:OverrideMicrosoftSystemLevel";
 
-		public PerformanceLogging(IConfiguration configuration, ILoggerFactory loggerFactory, ILoggingEnricher loggingEnricher)
+        #endregion
+
+        #region C-Tor
+
+        public PerformanceLogging(IConfiguration configuration, ILoggerFactory loggerFactory, ILoggingEnricher loggingEnricher)
 			: base(configuration, loggerFactory, loggingEnricher)
 		{
 		}
 
-		protected override string GetDatabaseConnectionString()
+        #endregion
+
+        protected override string GetDatabaseConnectionString()
 		{
 			return Configuration[_connectionString];
 		}

@@ -14,7 +14,7 @@ namespace Demo.Logging
 
 		public LoggingEnricher(IConfiguration config)
 		{
-			_config = config;
+            this._config = config;
 		}
 
 		public ILogEventEnricher[] CreateAllEnrichers()
@@ -22,7 +22,7 @@ namespace Demo.Logging
 			var enrichersList = new ILogEventEnricher[]
 			{
 				new ThreadIdEnricher(),
-				new EnvironmentEnricher(_config)
+				new EnvironmentEnricher(this._config)
 			};
 			return enrichersList;
 		}

@@ -14,24 +14,33 @@ namespace Demo.Logging
     /// </summary>
     public class LoggingService : ILoggingService
 	{
-		private readonly ITechnicalLogging _technicalLogging;
+
+        #region Fieldsd
+
+        private readonly ITechnicalLogging _technicalLogging;
 		private readonly IPerformanceLogging _performanceLogging;
 		private readonly ISystemLogging _systemLogging;
 		private Serilog.ILogger _technicalLogger;
 		private Serilog.ILogger _performanceLogger;
 		private Serilog.ILogger _systemLogger;
 
-		public LoggingService(ITechnicalLogging technicalLogging, IPerformanceLogging performanceLogging, ISystemLogging systemLogging)
+        #endregion
+
+        #region C-Tor
+
+        public LoggingService(ITechnicalLogging technicalLogging, IPerformanceLogging performanceLogging, ISystemLogging systemLogging)
 		{
-			_technicalLogging = technicalLogging;
-			_performanceLogging = performanceLogging;
-			_systemLogging = systemLogging;
-			_technicalLogger = technicalLogging.Logger ?? throw new ArgumentNullException(nameof(technicalLogging.Logger));
-			_performanceLogger = performanceLogging.Logger ?? throw new ArgumentNullException(nameof(performanceLogging.Logger));
-			_systemLogger = systemLogging.Logger ?? throw new ArgumentNullException(nameof(systemLogging.Logger));
+            this._technicalLogging = technicalLogging;
+            this._performanceLogging = performanceLogging;
+            this._systemLogging = systemLogging;
+            this._technicalLogger = technicalLogging.Logger ?? throw new ArgumentNullException(nameof(technicalLogging.Logger));
+            this._performanceLogger = performanceLogging.Logger ?? throw new ArgumentNullException(nameof(performanceLogging.Logger));
+            this._systemLogger = systemLogging.Logger ?? throw new ArgumentNullException(nameof(systemLogging.Logger));
 		}
 
-		public void CloseAndFlush()
+        #endregion
+
+        public void CloseAndFlush()
 		{
 			_technicalLogging.CloseAndFlush();
 			_performanceLogging.CloseAndFlush();

@@ -42,9 +42,7 @@ namespace Demo.Logging
 			{
 				new System.Data.DataColumn { DataType = typeof(string), ColumnName = "ApplicationName" },
 				new System.Data.DataColumn { DataType = typeof(string), ColumnName = "Environment" },
-				new System.Data.DataColumn { DataType = typeof(string), ColumnName = "RequestHeaders" },
 				new System.Data.DataColumn { DataType = typeof(string), ColumnName = "SourceContext" },
-				new System.Data.DataColumn { DataType = typeof(string), ColumnName = "Controller" },
 				new System.Data.DataColumn { DataType = typeof(int), ColumnName = "ThreadId" }
 			};
 

@@ -14,13 +14,13 @@ namespace Demo.Logging
 
 		public EnvironmentEnricher(IConfiguration configuration)
 		{
-			_configuration = configuration;
+			this._configuration = configuration;
 		}
 
 		public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
 		{
 			logEvent.AddPropertyIfAbsent(
-				propertyFactory.CreateProperty("Environment", _configuration["Environment"]));
+				propertyFactory.CreateProperty("Environment", this._configuration["Environment"]));
 		}
 	}
 }
