@@ -13,10 +13,14 @@ namespace Demo.Logging
 {
 	public static class LoggerConfigurationExtensions
 	{
-		private const string _tableSchemaName = "dbo";
+        #region Fields
+
+        private const string _tableSchemaName = "dbo";
 		private const string _tableName = "Logs";
 
-		public static LoggerConfiguration ILSLoggerSink(this LoggerSinkConfiguration loggerConfiguration,
+        #endregion
+
+        public static LoggerConfiguration ILSLoggerSink(this LoggerSinkConfiguration loggerConfiguration,
 			Func<string> connectionstringFunc,
 			LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum,
 			int batchPostingLimit = MSSqlServerSink.DefaultBatchPostingLimit,
