@@ -4,3 +4,10 @@ C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Contracts\bin\Deb
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Contracts\bin\Debug\Serilog.xml
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Contracts\obj\Debug\Demo.Contracts.dll
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Contracts\obj\Debug\Demo.Contracts.pdb
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\bin\Debug\Demo.Contracts.dll
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\bin\Debug\Demo.Contracts.pdb
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\bin\Debug\Serilog.dll
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\bin\Debug\Serilog.xml
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\obj\Debug\Demo.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\obj\Debug\Demo.Contracts.dll
+C:\Users\07759\Source\Repos\logging\Demo.Contracts\obj\Debug\Demo.Contracts.pdb

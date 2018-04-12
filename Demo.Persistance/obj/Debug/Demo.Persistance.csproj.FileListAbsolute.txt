@@ -29,3 +29,4 @@ C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Persistance\bin\D
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Persistance\obj\Debug\Demo.Persistance.csproj.CopyComplete
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Persistance\obj\Debug\Demo.Persistance.dll
 C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Persistance\obj\Debug\Demo.Persistance.pdb
+C:\Users\07759\Source\Repos\logging\Demo.Persistance\obj\Debug\Demo.Persistance.csprojResolveAssemblyReference.cache
