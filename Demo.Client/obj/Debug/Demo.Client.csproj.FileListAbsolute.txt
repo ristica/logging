@@ -1,0 +1,6 @@
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\bin\Debug\Demo.Client.exe.config
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\bin\Debug\Demo.Client.exe
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\bin\Debug\Demo.Client.pdb
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\obj\Debug\Demo.Client.csprojResolveAssemblyReference.cache
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\obj\Debug\Demo.Client.exe
+C:\Users\07759\Documents\Visual Studio 2017\Projects\Demo\Demo.Client\obj\Debug\Demo.Client.pdb
